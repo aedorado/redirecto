@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Redirecto</title>
+		<style>
+			body {
+			    width: 400px;
+			    font-family: Tahoma;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			a, span {
+			    padding: 10px;
+			}
+
+			ul {
+			    list-style-type: none;
+			    padding: 0;
+			    margin: 0 0 5px 0;
+			}
+
+			#new-rule input[type=text],
+			.edit-rule input[type=text] {
+			    width: 220px;
+			    margin: 0 5px;
+			}
+
+			.item-left, .item-right {
+			    width: 100px;
+			    display: inline-block;
+			    /*overflow: hidden;*/
+			}
+
+			.item-mid {
+				width: 5px;
+			}
+
+			.remove-item {
+				position: relative;
+				left: 53px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>REDIRECTO</h1>
+		<form id="new-site">
+			<input type="text" id="sitetoblock" placeholder="block">
+			<input type="text" id="redirect-to" placeholder="redirect">
+			<button id="add" placeholder="redirect-to">ADD</button>
+		</form>
+		<ul id="bs-list"></ul>
+	</body>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" async src="popup.js"></script>
+</html>
